@@ -1,0 +1,10 @@
+{
+  "name" : "griddle",
+  "title" : "Griddle grid system",
+  "description" : "Minimal Sass powered grid system",
+  "url" : "https://azinasili.com",
+  "author" : "Azin Asili",
+  "copyright" : "2015",
+  "version" : "0.2.1",
+  "license" : "MIT"
+}

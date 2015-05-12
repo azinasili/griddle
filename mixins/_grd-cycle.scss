@@ -1,0 +1,29 @@
+/// Clear or remove clear to cycle columns with unequal heights
+/// @author Azin Asili
+/// @access public
+/// @param {number} $cycle [null] - Clear float at desired column count
+/// @param {number} $uncycle [null] - Remove clear at desired column count
+/// @output Nth-child to clear or remove clear from columns
+/// @example scss
+///   .foo {
+///     @include grd-cycle(3, 2);
+///   }
+/// @example css
+///   .foo:nth-child(2n + 1) {
+///     clear: none;
+///   }
+///   .foo:nth-child(3n + 1) {
+///     clear: both;
+///   }
+@mixin grd-cycle($cycle: null, $uncycle: null) {
+  @if $uncycle != null and $uncycle != 0 {
+    &:nth-child(#{$uncycle}n + 1) {
+      clear: none;
+    }
+  }
+  @if $cycle != null and $cycle != 0 {
+    &:nth-child(#{$cycle}n + 1) {
+      clear: both;
+    }
+  }
+}

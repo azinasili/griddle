@@ -1,0 +1,29 @@
+/// Column meant for use inside media queries
+/// @author Azin Asili
+/// @access public
+/// @param {number} $width [100%] - Width of column
+/// @param {number} $gutter [null] - Padding for column gutter
+/// @param {number} $shift [null] - Shift source ordering of column
+/// @require {function} _is-gutter - Calculate gutter for row or column
+/// @require {function} _is-float - Check if number is a float
+/// @output CSS to create column with gutters within a media query
+/// @example scss
+///   .foo {
+///     @include grd-mq-column(3/5);
+///   }
+/// @example css
+///   .foo {
+///     width: 60%;
+///   }
+@mixin grd-mq-col($width: 100%, $gutter: null, $shift: null) {
+  @if $gutter != null {
+    padding-left: _is-gutter($gutter, col);
+    padding-right: _is-gutter($gutter, col);
+  }
+  width: _is-float($width);
+
+  @if $shift != null {
+    left: _is-float($shift) * -1;
+    position: relative;
+  }
+}

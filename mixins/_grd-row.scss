@@ -1,0 +1,19 @@
+/// Create container for grid columns
+/// @author Azin Asili
+/// @access public
+/// @param {number} $gutter [map-get($griddle, gutter)] - Negative margin left and right to display columns
+/// @require {function} _is-gutter - Calculate gutter for row or column
+/// @output Margins to properly hold columns
+/// @example scss
+///   .foo {
+///     @include grd-offset(40px);
+///   }
+/// @example css
+///   .foo {
+///     margin-left: -20ox;
+///     margin-right: -20px;
+///   }
+@mixin grd-row($gutter: map-get($griddle, gutter)) {
+  margin-left: _is-gutter($gutter, row);
+  margin-right: _is-gutter($gutter, row);
+}

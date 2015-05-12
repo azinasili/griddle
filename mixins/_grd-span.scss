@@ -1,0 +1,27 @@
+/// Create single column without gutter
+/// @author Azin Asili
+/// @access public
+/// @param {number} $width [100%] - Width of column span
+/// @param {number} $shift [null] - Shift source ordering of column span
+/// @require {function} _is-float - Check if number is a float
+/// @output CSS to create column without gutters
+/// @example scss
+///   .foo {
+///     @include grd-span(3/5, 2/5);
+///   }
+/// @example css
+///   .foo {
+///     float: left;
+///     width: 60%;
+///     left: -40%;
+///     position: relative;
+///   }
+@mixin grd-span($width: 100%, $shift: null) {
+  float: left;
+  width: _is-float($width);
+
+  @if $shift != null {
+    left: _is-float($shift) * -1;
+    position: relative;
+  }
+}

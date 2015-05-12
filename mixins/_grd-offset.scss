@@ -1,0 +1,17 @@
+/// Offset columns and spans
+/// @author Azin Asili
+/// @access public
+/// @param {number} $offset - Offset width
+/// @require {function} _is-float - Check if number is a float
+/// @output Margin left to move column
+/// @example scss
+///   .foo {
+///     @include grd-offset(3/5);
+///   }
+/// @example css
+///   .foo {
+///     margin-left: 60%;
+///   }
+@mixin grd-offset($offset) {
+  margin-left: _is-float($offset);
+}

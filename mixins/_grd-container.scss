@@ -1,0 +1,31 @@
+/// Create container for rows and columns
+/// @author Azin Asili
+/// @access public
+/// @param {number} $width [map-get($griddle, max-width)] - Max width for container element
+/// @param {number} $gutter [map-get($griddle, gutter)] - Padding left and right of container element
+/// @require {function} _is-gutter - Calculate gutter for row or column
+/// @require {function} _is-float - Check if number is a float
+/// @output CSS to create page container
+/// @example scss
+///   .foo {
+///     @include grd-container(960px, 40px);
+///   }
+/// @example css
+///   .foo {
+///     margin-left: auto;
+///     margin-right: auto;
+///     max-width: 960px;
+///     padding-left: 20px;
+///     padding-right: 20px;
+///     width: 100%;
+///   }
+@mixin grd-container($width: map-get($griddle, max-width), $gutter: map-get($griddle, gutter)) {
+  @if $width != 100% {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: _is-float($width);
+  }
+  padding-left: _is-gutter($gutter, col);
+  padding-right: _is-gutter($gutter, col);
+  width: 100%;
+}
