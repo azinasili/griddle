@@ -4,7 +4,7 @@
   "homepage": "https://github.com/azinasili/griddlegs",
   "authors": "Azin Asili <azinasili@gmail.com>",
   "description": "Minimal Sass powered grid system",
-  "main": "griddle.scss",
+  "main": "griddlegs.scss",
   "keywords": [
     "grid",
     "sass",
@@ -13,10 +13,12 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "node_modules",
     "bower_components",
     "_tmp",
     "bower_components",
     "bower.json",
-    "package.json",
+    "Gruntfile.js",
+    "package.json"
   ]
 }
