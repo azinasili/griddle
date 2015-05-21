@@ -11,13 +11,14 @@
 ///   }
 /// @example css
 ///   .foo {
+///     display: inline-block;
 ///     float: left;
 ///     width: 60%;
 ///     left: -40%;
 ///     position: relative;
 ///   }
 @mixin grd-span($width: 100%, $shift: null) {
-  float: left;
+  display: inline-block;
   width: _is-float($width);
 
   @if $shift != null {

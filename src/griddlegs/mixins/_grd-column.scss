@@ -13,13 +13,15 @@
 ///   }
 /// @example css
 ///   .foo {
-///     float: left;
+///     display: inline-block;
+///     font-size: 1rem;
 ///     padding-left: 20px;
 ///     padding-right: 20px;
 ///     width: 60%;
 ///   }
 @mixin grd-column($width: 100%, $gutter: map-get($griddle, gutter), $shift: null) {
-  float: left;
+  display: inline-block;
+  font-size: 1rem;
   padding-left: _is-gutter($gutter, col);
   padding-right: _is-gutter($gutter, col);
   width: _is-float($width);

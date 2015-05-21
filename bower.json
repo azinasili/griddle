@@ -1,6 +1,6 @@
 {
   "name": "griddlegs",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/azinasili/griddlegs",
   "authors": "Azin Asili <azinasili@gmail.com>",
   "description": "Minimal Sass powered grid system",
@@ -17,8 +17,6 @@
     "_tmp",
     "bower_components",
     "bower.json",
-    "LICENSE.md",
     "package.json",
-    "README.md"
   ]
 }

@@ -1,0 +1,19 @@
+/// Vertically align columns
+/// @author Azin Asili
+/// @access public
+/// @param {value} $align - Align columns on a vertical axis
+/// @output CSS to vertical align columns
+/// @example scss
+///   .foo {
+///     @include grd-align(middle);
+///   }
+/// @example css
+///   .foo {
+///     vertical-align: middle;
+///   }
+@mixin grd-align($align) {
+  @if not index('baseline' 'sub' 'super' 'text-top' 'text-bottom' 'middle' 'top' 'bottom' 'inherit', $align) {
+    @warn '`#{$align}` is not a valid argument for `grd-align()`. Please use `baseline`, `sub`, `super`, `text-top`, `text-bottom`, `middle`, `top`, `bottom`, or `inherit` instead.';
+  }
+  vertical-align: $align;
+}
