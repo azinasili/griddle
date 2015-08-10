@@ -1,12 +1,13 @@
 {
   "name": "griddlegs",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "https://github.com/azinasili/griddlegs",
   "authors": "Azin Asili <azinasili@gmail.com>",
   "description": "Minimal Sass powered grid system",
-  "main": "griddlegs.scss",
+  "main": "src/griddlegs/_griddlegs.scss",
   "keywords": [
     "grid",
+    "flexbox fallback",
     "sass",
     "scss"
   ],
@@ -16,6 +17,7 @@
     "node_modules",
     "bower_components",
     "_tmp",
+    "demo",
     "bower_components",
     "bower.json",
     "Gruntfile.js",
