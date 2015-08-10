@@ -4,7 +4,7 @@
 /// @param {number} $float - Number to check if is a float
 /// @return {number} Float or percent
 @function _is-float($float) {
-  @if type-of($float) == number and unitless($floor) and floor(abs($float)) != abs($float) {
+  @if type-of($float) == number and unitless($float) and floor(abs($float)) != abs($float) {
     @return percentage($float);
   }
   @return $float;
