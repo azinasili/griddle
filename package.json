@@ -2,9 +2,19 @@
   "name" : "griddlegs",
   "title" : "Griddle grid system",
   "description" : "Minimal Sass powered grid system",
-  "url" : "https://azinasili.com",
-  "author" : "Azin Asili",
+  "version" : "0.2.4",
   "copyright" : "2015",
-  "version" : "0.2.3",
-  "license" : "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:azinasili/griddlegs.git"
+  },
+  "keywords": [
+    "grid",
+    "flexbox fallback"
+    "sass",
+    "scss"
+  ],
+  "author": "Azin Asili",
+  "license" : "MIT",
+  "homepage": "https://github.com/azinasili/griddlegs"
 }
