@@ -8,7 +8,7 @@
 /// @output CSS to create page container
 /// @example scss
 ///   .foo {
-///     @include grd-container(960px, 40px);
+///     @include grt-container(960px, 40px);
 ///   }
 /// @example css
 ///   .foo {
@@ -19,7 +19,7 @@
 ///     padding-right: 20px;
 ///     width: 100%;
 ///   }
-@mixin grd-container($width: map-get($griddle, max-width), $gutter: map-get($griddle, gutter)) {
+@mixin grt-container($width: map-get($griddle, max-width), $gutter: map-get($griddle, gutter)) {
   @if $width != 100% {
     margin-left: auto;
     margin-right: auto;

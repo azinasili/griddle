@@ -6,12 +6,12 @@
 /// @output Margin left to move column
 /// @example scss
 ///   .foo {
-///     @include grd-offset(3/5);
+///     @include grt-offset(3/5);
 ///   }
 /// @example css
 ///   .foo {
 ///     margin-left: 60%;
 ///   }
-@mixin grd-offset($offset) {
+@mixin grt-offset($offset) {
   margin-left: _is-float($offset);
 }

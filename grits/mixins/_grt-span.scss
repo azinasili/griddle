@@ -7,7 +7,7 @@
 /// @output CSS to create column without gutters
 /// @example scss
 ///   .foo {
-///     @include grd-span(3/5, 2/5);
+///     @include grt-span(3/5, 2/5);
 ///   }
 /// @example css
 ///   .foo {
@@ -17,7 +17,7 @@
 ///     left: -40%;
 ///     position: relative;
 ///   }
-@mixin grd-span($width: 100%, $shift: null) {
+@mixin grt-span($width: 100%, $shift: null) {
   display: inline-block;
   font-size: 1rem;
   width: _is-float($width);

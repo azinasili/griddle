@@ -9,7 +9,7 @@
 /// @output CSS to create column with gutters
 /// @example scss
 ///   .foo {
-///     @include grd-column(3/5, 40px);
+///     @include grt-column(3/5, 40px);
 ///   }
 /// @example css
 ///   .foo {
@@ -19,7 +19,7 @@
 ///     padding-right: 20px;
 ///     width: 60%;
 ///   }
-@mixin grd-column($width: 100%, $gutter: map-get($griddle, gutter), $shift: null) {
+@mixin grt-column($width: 100%, $gutter: map-get($griddle, gutter), $shift: null) {
   display: inline-block;
   font-size: 1rem;
   padding-left: _is-gutter($gutter, col);
@@ -32,9 +32,8 @@
   }
 }
 
-/// Alias for `grd-column()` mixin
-/// @alias grd-column()
-/// @require {mixin} grd-column - Create grid column
-@mixin grd-col($args...) {
-  @include grd-column($args...);
+/// Alias for `grt-column()` mixin
+/// @alias grt-column
+@mixin grt-col($args...) {
+  @include grt-column($args...);
 }

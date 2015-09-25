@@ -6,7 +6,7 @@
 /// @output Margins to properly hold columns
 /// @example scss
 ///   .foo {
-///     @include grd-offset(40px);
+///     @include grt-offset(40px);
 ///   }
 /// @example css
 ///   .foo {
@@ -14,7 +14,7 @@
 ///     margin-left: -20px;
 ///     margin-right: -20px;
 ///   }
-@mixin grd-row($gutter: map-get($griddle, gutter)) {
+@mixin grt-row($gutter: map-get($griddle, gutter)) {
   font-size: 0;
   margin-left: _is-gutter($gutter, row);
   margin-right: _is-gutter($gutter, row);

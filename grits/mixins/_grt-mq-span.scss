@@ -7,13 +7,13 @@
 /// @output CSS to create column without gutters within a media query
 /// @example scss
 ///   .foo {
-///     @include grd-mq-span(3/6);
+///     @include grt-mq-span(3/6);
 ///   }
 /// @example css
 ///   .foo {
 ///     width: 60%;
 ///   }
-@mixin grd-mq-span($width: 100%, $shift: null) {
+@mixin grt-mq-span($width: 100%, $shift: null) {
   width: _is-float($width);
 
   @if $shift != null {

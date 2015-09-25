@@ -9,13 +9,13 @@
 /// @output CSS to create column with gutters within a media query
 /// @example scss
 ///   .foo {
-///     @include grd-mq-column(3/5);
+///     @include grt-mq-column(3/5);
 ///   }
 /// @example css
 ///   .foo {
 ///     width: 60%;
 ///   }
-@mixin grd-mq-col($width: 100%, $gutter: null, $shift: null) {
+@mixin grt-mq-col($width: 100%, $gutter: null, $shift: null) {
   @if $gutter != null {
     padding-left: _is-gutter($gutter, col);
     padding-right: _is-gutter($gutter, col);
