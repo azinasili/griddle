@@ -9,10 +9,14 @@
     "url": "git@github.com:azinasili/grits.git"
   },
   "keywords": [
-    "grid",
     "flexbox fallback",
+    "grid",
     "sass",
-    "scss"
+    "scss",
+    "helper",
+    "library",
+    "mixins",
+    "functions"
   ],
   "author": "Azin Asili",
   "license" : "MIT",
