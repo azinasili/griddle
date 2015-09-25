@@ -17,7 +17,6 @@
     "node_modules",
     "bower_components",
     "_tmp",
-    "demo",
     "bower_components",
     "bower.json",
     "Gruntfile.js",
