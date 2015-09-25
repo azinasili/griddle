@@ -5,15 +5,15 @@
 /// @output CSS to vertical align columns
 /// @example scss
 ///   .foo {
-///     @include grt-align(middle);
+///     @include grits-align(middle);
 ///   }
 /// @example css
 ///   .foo {
 ///     vertical-align: middle;
 ///   }
-@mixin grt-align($align) {
+@mixin grits-align($align) {
   @if not index('baseline' 'sub' 'super' 'text-top' 'text-bottom' 'middle' 'top' 'bottom' 'inherit', $align) {
-    @warn '`#{$align}` is not a valid argument for `grt-align()`. Please use `baseline`, `sub`, `super`, `text-top`, `text-bottom`, `middle`, `top`, `bottom`, or `inherit` instead.';
+    @warn '`#{$align}` is not a valid argument for `grits-align()`. Please use `baseline`, `sub`, `super`, `text-top`, `text-bottom`, `middle`, `top`, `bottom`, or `inherit` instead.';
   }
   vertical-align: $align;
 }

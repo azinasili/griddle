@@ -6,15 +6,15 @@
 /// @output CSS to justify columns
 /// @example scss
 ///   .foo {
-///     @include grt-justify(center);
+///     @include grits-justify(center);
 ///   }
 /// @example css
 ///   .foo {
 ///     text-align: center;
 ///   }
-@mixin grt-justify($justify) {
+@mixin grits-justify($justify) {
   @if not index('left' 'right' 'center' 'justify' 'justify-all' 'start' 'end' 'match-parent' 'inherit', $justify) {
-    @warn '`#{$justify}` is not a valid argument for `grt-justify()`. Please use `left`, `right`, `center`, `justify`, `justify-all`, `start`, `end`, `match-parent`, or `inherit` instead.';
+    @warn '`#{$justify}` is not a valid argument for `grits-justify()`. Please use `left`, `right`, `center`, `justify`, `justify-all`, `start`, `end`, `match-parent`, or `inherit` instead.';
   }
   text-align: $justify;
 }

@@ -1,6 +1,6 @@
 {
   "name": "grits",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "homepage": "https://github.com/azinasili/grits",
   "author": "Azin Asili <azinasili@gmail.com>",
   "description": "Minimal Sass powered grid system",
