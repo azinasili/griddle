@@ -1,9 +1,9 @@
 {
-  "name" : "grits",
-  "title" : "Grits grid system",
-  "description" : "Minimal Sass powered grid system",
-  "version" : "0.2.6",
-  "copyright" : "2015",
+  "name": "grits",
+  "title": "Grits",
+  "description": "Minimal Sass powered grid system",
+  "version": "0.2.6",
+  "copyright": "2015",
   "repository": {
     "type": "git",
     "url": "git@github.com:azinasili/grits.git"

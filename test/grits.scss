@@ -1,0 +1,55 @@
+@import '../grits';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  background: coral;
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: white;
+  padding: 30px;
+}
+
+// Grid widths
+$grid: (
+  whole: 100%,
+  half: 50%,
+  third: 1/3,
+  two-third: 2/3,
+  fourth: 25%,
+  three-fourth: 75%,
+  fifth: 1/5,
+  two-fifth: 40%,
+  three-fifth: 60%
+);
+
+.container {
+  @include grt-column();
+}
+
+.row {
+  @include grt-row();
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+// Mobile first layout
+.col {
+  @include grt-col();
+}
+
+// Change width of columns
+@media (min-width: 40em) {
+  @each $width, $value in $grid {
+    .col-#{$width} {
+      @include grt-mq-col($value);
+    }
+  }
+}
