@@ -2,7 +2,7 @@
 /// @author Azin Asili
 /// @access public
 /// @param {number} $width [100%] - Width of column
-/// @param {number} $gutter [map-get($griddle, gutter)] - Padding for column gutter
+/// @param {number} $gutter [map-get($grits, gutter)] - Padding for column gutter
 /// @param {number} $shift [null] - Shift source ordering of column
 /// @require {function} _grt-is-gutter - Calculate gutter for row or column
 /// @require {function} _grt-is-float - Check if number is a float
@@ -19,7 +19,7 @@
 ///     padding-right: 20px;
 ///     width: 60%;
 ///   }
-@mixin grt-column($width: 100%, $gutter: map-get($griddle, gutter), $shift: null) {
+@mixin grt-column($width: 100%, $gutter: map-get($grits, gutter), $shift: null) {
   display: inline-block;
   font-size: 1rem;
   padding-left: _grt-is-gutter($gutter, col);
