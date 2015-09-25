@@ -3,7 +3,7 @@
 /// @param {string} $row-or-col - Gutter row or column context
 /// @return {number} Gutter width for row or column
 /// @throw Warning if `$gutter` is not a number or is unitless
-@function _is-gutter($gutter, $row-or-col) {
+@function _grt-is-gutter($gutter, $row-or-col) {
   @if type-of($gutter) != number or $gutter < 0 {
     @warn '`#{$gutter}` is not a valid argument of gutter(). Please use positive number with a unit.';
     @return null;
