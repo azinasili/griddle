@@ -6,10 +6,14 @@
   "description": "Minimal Sass powered grid system",
   "main": "_grits.scss",
   "keywords": [
-    "grid",
     "flexbox fallback",
+    "grid",
     "sass",
-    "scss"
+    "scss",
+    "helper",
+    "library",
+    "mixins",
+    "functions"
   ],
   "license": "MIT",
   "ignore": [
