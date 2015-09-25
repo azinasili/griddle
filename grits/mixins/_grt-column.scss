@@ -2,10 +2,10 @@
 /// @author Azin Asili
 /// @access public
 /// @param {number} $width [100%] - Width of column
-/// @param {number} $gutter [map-get($griddle, gutter)] - Padding for column gutter
+/// @param {number} $gutter [map-get($grits, gutter)] - Padding for column gutter
 /// @param {number} $shift [null] - Shift source ordering of column
-/// @require {function} _is-gutter - Calculate gutter for row or column
-/// @require {function} _is-float - Check if number is a float
+/// @require {function} _grt-is-gutter - Calculate gutter for row or column
+/// @require {function} _grt-is-float - Check if number is a float
 /// @output CSS to create column with gutters
 /// @example scss
 ///   .foo {
@@ -19,15 +19,15 @@
 ///     padding-right: 20px;
 ///     width: 60%;
 ///   }
-@mixin grt-column($width: 100%, $gutter: map-get($griddle, gutter), $shift: null) {
+@mixin grt-column($width: 100%, $gutter: map-get($grits, gutter), $shift: null) {
   display: inline-block;
   font-size: 1rem;
-  padding-left: _is-gutter($gutter, col);
-  padding-right: _is-gutter($gutter, col);
-  width: _is-float($width);
+  padding-left: _grt-is-gutter($gutter, col);
+  padding-right: _grt-is-gutter($gutter, col);
+  width: _grt-is-float($width);
 
   @if $shift != null {
-    left: _is-float($shift) * -1;
+    left: _grt-is-float($shift) * -1;
     position: relative;
   }
 }
