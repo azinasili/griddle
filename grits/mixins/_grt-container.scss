@@ -3,8 +3,8 @@
 /// @access public
 /// @param {number} $width [map-get($grits, max-width)] - Max width for container element
 /// @param {number} $gutter [map-get($grits, gutter)] - Padding left and right of container element
-/// @require {function} _grt_is-gutter - Calculate gutter for row or column
-/// @require {function} _grt_is-float - Check if number is a float
+/// @require {function} _grt-is-gutter - Calculate gutter for row or column
+/// @require {function} _grt-is-float - Check if number is a float
 /// @output CSS to create page container
 /// @example scss
 ///   .foo {
@@ -23,9 +23,9 @@
   @if $width != 100% {
     margin-left: auto;
     margin-right: auto;
-    max-width: _grt_is-float($width);
+    max-width: _grt-is-float($width);
   }
-  padding-left: _grt_is-gutter($gutter, col);
-  padding-right: _grt_is-gutter($gutter, col);
+  padding-left: _grt-is-gutter($gutter, col);
+  padding-right: _grt-is-gutter($gutter, col);
   width: 100%;
 }

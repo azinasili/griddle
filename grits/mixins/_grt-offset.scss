@@ -2,7 +2,7 @@
 /// @author Azin Asili
 /// @access public
 /// @param {number} $offset - Offset width
-/// @require {function} _grt_is-float - Check if number is a float
+/// @require {function} _grt-is-float - Check if number is a float
 /// @output Margin left to move column
 /// @example scss
 ///   .foo {
@@ -13,5 +13,5 @@
 ///     margin-left: 60%;
 ///   }
 @mixin grt-offset($offset) {
-  margin-left: _grt_is-float($offset);
+  margin-left: _grt-is-float($offset);
 }

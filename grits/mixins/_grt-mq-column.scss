@@ -4,8 +4,8 @@
 /// @param {number} $width [100%] - Width of column
 /// @param {number} $gutter [null] - Padding for column gutter
 /// @param {number} $shift [null] - Shift source ordering of column
-/// @require {function} _grt_is-gutter - Calculate gutter for row or column
-/// @require {function} _grt_is-float - Check if number is a float
+/// @require {function} _grt-is-gutter - Calculate gutter for row or column
+/// @require {function} _grt-is-float - Check if number is a float
 /// @output CSS to create column with gutters within a media query
 /// @example scss
 ///   .foo {
@@ -17,13 +17,13 @@
 ///   }
 @mixin grt-mq-col($width: 100%, $gutter: null, $shift: null) {
   @if $gutter != null {
-    padding-left: _grt_is-gutter($gutter, col);
-    padding-right: _grt_is-gutter($gutter, col);
+    padding-left: _grt-is-gutter($gutter, col);
+    padding-right: _grt-is-gutter($gutter, col);
   }
-  width: _grt_is-float($width);
+  width: _grt-is-float($width);
 
   @if $shift != null {
-    left: _grt_is-float($shift) * -1;
+    left: _grt-is-float($shift) * -1;
     position: relative;
   }
 }
