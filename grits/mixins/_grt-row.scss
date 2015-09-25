@@ -2,7 +2,7 @@
 /// @author Azin Asili
 /// @access public
 /// @param {number} $gutter [map-get($grits, gutter)] - Negative margin left and right to display columns
-/// @require {function} _grt-is-gutter - Calculate gutter for row or column
+/// @require {function} _grt_is-gutter - Calculate gutter for row or column
 /// @output Margins to properly hold columns
 /// @example scss
 ///   .foo {
@@ -16,6 +16,6 @@
 ///   }
 @mixin grt-row($gutter: map-get($grits, gutter)) {
   font-size: 0;
-  margin-left: _grt-is-gutter($gutter, row);
-  margin-right: _grt-is-gutter($gutter, row);
+  margin-left: _grt_is-gutter($gutter, row);
+  margin-right: _grt_is-gutter($gutter, row);
 }

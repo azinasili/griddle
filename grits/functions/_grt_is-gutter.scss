@@ -1,17 +1,17 @@
 /// Calculate gutter for row or column
 /// @param {number} $gutter - Gutter width
 /// @param {string} $row-or-col - Gutter row or column context
-/// @require {function} _grt-is-float - Check if number is a float
+/// @require {function} _grt_is-float - Check if number is a float
 /// @return {number} Gutter width for row or column
 /// @throw Warning if `$gutter` is not a number or is unitless
-@function _grt-is-gutter($gutter, $row-or-col) {
+@function _grt_is-gutter($gutter, $row-or-col) {
   @if type-of($gutter) != number or $gutter < 0 {
     @warn '`#{$gutter}` is not a valid argument of gutter(). Please use positive number with a unit.';
     @return null;
   }
   @if index('c' 'col' 'column', $row-or-col) {
-    @return _grt-is-float($gutter) / 2;
+    @return _grt_is-float($gutter) / 2;
   } @else if index('r' 'row', $row-or-col) {
-    @return _grt-is-float($gutter) / -2;
+    @return _grt_is-float($gutter) / -2;
   }
 }
