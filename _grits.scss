@@ -8,9 +8,8 @@
 @import 'grits/options';
 
 // Grits functions
-@import 'grits/functions/strip-unit';
-@import 'grits/functions/is-float';
-@import 'grits/functions/is-gutter';
+@import 'grits/functions/grt-is-float';
+@import 'grits/functions/grt-is-gutter';
 
 // Grits mixins
 @import 'grits/mixins/grt-container';
