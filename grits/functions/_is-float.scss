@@ -4,7 +4,9 @@
 /// @param {number} $float - Number to check if is a float
 /// @return {number} Float or percent
 @function _grits-is-float($float) {
-  @if type-of($float) == number and unitless($float) and floor(abs($float)) != abs($float) {
+  @if $float == 1 {
+    @return 100%;
+  } @else if type-of($float) == number and unitless($float) and floor(abs($float)) != abs($float) {
     @return percentage($float);
   }
   @return $float;
