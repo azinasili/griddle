@@ -16,6 +16,8 @@
 ///   }
 @mixin grits-row($gutter: map-get($grits, gutter)) {
   font-size: 0;
-  margin-left: _grits-is-gutter($gutter, row);
-  margin-right: _grits-is-gutter($gutter, row);
+  @if $gutter != 0 {
+    margin-left: _grits-is-gutter($gutter, row);
+    margin-right: _grits-is-gutter($gutter, row);
+  }
 }
