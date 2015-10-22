@@ -1,7 +1,8 @@
 /// Vertically align columns
 /// @author Azin Asili
 /// @access public
-/// @param {value} $align - Align columns on a vertical axis
+/// @param {string} $align - Align columns on a vertical axis
+/// @throw Warning when given invalid string
 /// @output CSS to vertical align columns
 /// @example scss
 ///   .foo {
