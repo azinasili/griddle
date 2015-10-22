@@ -3,11 +3,11 @@
 /// @access public
 /// @param {number} $width [100%] - Width of column span
 /// @param {number} $shift [null] - Shift source ordering of column span
-/// @require {function} _grt-is-float - Check if number is a float
+/// @require {function} _grits-is-float - Check if number is a float
 /// @output CSS to create column without gutters
 /// @example scss
 ///   .foo {
-///     @include grt-span(3/5, 2/5);
+///     @include grits-span(3/5, 2/5);
 ///   }
 /// @example css
 ///   .foo {
@@ -17,13 +17,13 @@
 ///     left: -40%;
 ///     position: relative;
 ///   }
-@mixin grt-span($width: 100%, $shift: null) {
+@mixin grits-span($width: 100%, $shift: null) {
   display: inline-block;
   font-size: 1rem;
-  width: _grt-is-float($width);
+  width: _grits-is-float($width);
 
   @if $shift != null {
-    left: _grt-is-float($shift) * -1;
+    left: _grits-is-float($shift) * -1;
     position: relative;
   }
 }

@@ -1,15 +1,19 @@
 {
   "name": "grits",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "homepage": "https://github.com/azinasili/grits",
   "author": "Azin Asili <azinasili@gmail.com>",
   "description": "Minimal Sass powered grid system",
   "main": "_grits.scss",
   "keywords": [
-    "grid",
     "flexbox fallback",
+    "grid",
     "sass",
-    "scss"
+    "scss",
+    "helper",
+    "library",
+    "mixins",
+    "functions"
   ],
   "license": "MIT",
   "ignore": [
@@ -17,7 +21,6 @@
     "node_modules",
     "bower_components",
     "_tmp",
-    "demo",
     "bower_components",
     "bower.json",
     "Gruntfile.js",

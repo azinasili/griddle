@@ -47,9 +47,10 @@ $RECYCLE.BIN/
 ##############################
 tags
 
-# SASS Cache BS #
+# Stylesheets #
 #################
 .sass-cache
+.css.map
 _tmp
 
 # NodeJS #

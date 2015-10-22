@@ -8,16 +8,16 @@
 @import 'grits/options';
 
 // Grits functions
-@import 'grits/functions/grt-is-float';
-@import 'grits/functions/grt-is-gutter';
+@import 'grits/functions/is-float';
+@import 'grits/functions/is-gutter';
 
 // Grits mixins
-@import 'grits/mixins/grt-container';
-@import 'grits/mixins/grt-row';
-@import 'grits/mixins/grt-column';
-@import 'grits/mixins/grt-mq-column';
-@import 'grits/mixins/grt-span';
-@import 'grits/mixins/grt-mq-span';
-@import 'grits/mixins/grt-offset';
-@import 'grits/mixins/grt-justify';
-@import 'grits/mixins/grt-align';
+@import 'grits/mixins/container';
+@import 'grits/mixins/row';
+@import 'grits/mixins/column';
+@import 'grits/mixins/mq-column';
+@import 'grits/mixins/span';
+@import 'grits/mixins/mq-span';
+@import 'grits/mixins/offset';
+@import 'grits/mixins/justify';
+@import 'grits/mixins/align';

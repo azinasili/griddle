@@ -31,25 +31,25 @@ $grid: (
 );
 
 .container {
-  @include grt-column();
+  @include grits-column();
 }
 
 .row {
-  @include grt-row();
+  @include grits-row();
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 // Mobile first layout
 .col {
-  @include grt-col();
+  @include grits-col();
 }
 
 // Change width of columns
 @media (min-width: 40em) {
   @each $width, $value in $grid {
     .col-#{$width} {
-      @include grt-mq-col($value);
+      @include grits-mq-col($value);
     }
   }
 }
