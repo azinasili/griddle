@@ -9,7 +9,7 @@
 /// @output CSS to create column with gutters
 /// @example scss
 ///   .foo {
-///     @include grits-column(3/5, 40px);
+///     @include grits-column(3/5, 1/3, 40px);
 ///   }
 /// @example css
 ///   .foo {
@@ -18,8 +18,10 @@
 ///     padding-left: 20px;
 ///     padding-right: 20px;
 ///     width: 60%;
+///     left: 33.33%;
+///     position: relative;
 ///   }
-@mixin grits-column($width: 100%, $gutter: map-get($grits, gutter), $shift: null) {
+@mixin grits-column($width: 100%, $shift: null, $gutter: map-get($grits, gutter)) {
   display: inline-block;
   font-size: 1rem;
   padding-left: _grits-is-gutter($gutter, col);

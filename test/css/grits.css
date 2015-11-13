@@ -1,23 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-.box {
-  background: coral;
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: 30px;
-}
-
 .container {
-  display: inline-block;
-  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
@@ -27,8 +11,6 @@ body {
   font-size: 0;
   margin-left: -10px;
   margin-right: -10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .col {
@@ -37,6 +19,46 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
+}
+
+.row-left {
+  text-align: left;
+}
+
+.row-center {
+  text-align: center;
+}
+
+.row-right {
+  text-align: right;
+}
+
+.col-top {
+  vertical-align: top;
+}
+
+.col-middle {
+  vertical-align: middle;
+}
+
+.col-bottom {
+  vertical-align: bottom;
+}
+
+.box.large {
+  padding: 100px;
+}
+
+.row {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.box {
+  background: coral;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 30px;
 }
 
 @media (min-width: 40em) {
