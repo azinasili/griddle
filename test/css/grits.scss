@@ -3,9 +3,8 @@
 // Structure and layout
 //
 // 1. Universal grid structure
-// 2. Grid overrides
-// 3. Demo styles
-// 4. Breakpoints
+// 2. Breakpoints
+// 3. Grid overrides
 // ----------------------------------------------------------------------------
 
 // Import Grits dependency
@@ -23,6 +22,11 @@
 // Column container
 .row {
   @include grits-row();
+
+  &.spaced {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 // Column base object
@@ -30,9 +34,44 @@
   @include grits-col();
 }
 
+.box {
+  background: coral;
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: white;
+  padding: 30px;
+
+  &.large {
+    padding: 100px;
+  }
+}
+
 
 // ----------------------------------------------------------------------------
-// 2. Grid overrides
+// 2. Breakpoints
+// ----------------------------------------------------------------------------
+// Grid widths
+$grid: (
+  whole        : 100%,
+  half         : 50%,
+  third        : 1/3,
+  two-third    : 2/3,
+  fourth       : 25%,
+  three-fourth : 75%,
+  fifth        : 1/5,
+  two-fifth    : 40%,
+  three-fifth  : 60%
+);
+
+@media (min-width: 40em) {
+  @each $width, $value in $grid {
+    .col-#{$width} {
+      @include grits-mq-col($value);
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// 3. Grid overrides
 // ----------------------------------------------------------------------------
 
 .row-left {
@@ -57,49 +96,4 @@
 
 .col-bottom {
   @include grits-align(bottom);
-}
-
-.box.large {
-  padding: 100px
-}
-
-
-// ----------------------------------------------------------------------------
-// 3. Demo styles
-// ----------------------------------------------------------------------------
-.row {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.box {
-  background: coral;
-  border: 2px solid rgba(0, 0, 0, .3);
-  color: white;
-  padding: 30px;
-}
-
-
-// ----------------------------------------------------------------------------
-// 4. Breakpoints
-// ----------------------------------------------------------------------------
-// Grid widths
-$grid: (
-  whole        : 100%,
-  half         : 50%,
-  third        : 1/3,
-  two-third    : 2/3,
-  fourth       : 25%,
-  three-fourth : 75%,
-  fifth        : 1/5,
-  two-fifth    : 40%,
-  three-fifth  : 60%
-);
-
-@media (min-width: 40em) {
-  @each $width, $value in $grid {
-    .col-#{$width} {
-      @include grits-mq-col($value);
-    }
-  }
 }
